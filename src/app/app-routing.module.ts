@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'cases', component: CasesComponent}
 ];
 
+
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
