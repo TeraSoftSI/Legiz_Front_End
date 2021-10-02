@@ -1,12 +1,11 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "cli": {
-    "analytics": "8433a297-2ebb-4821-90d5-a5d8bc691df2"
-  },
+
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "front-end-ts": {
+    "legiz": {
+
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -20,7 +19,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/front-end-ts",
+            "outputPath": "dist/legiz",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +71,11 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "front-end-ts:build:production"
+              
+              "browserTarget": "legiz:build:production"
             },
             "development": {
-              "browserTarget": "front-end-ts:build:development"
+              "browserTarget": "legiz:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,9 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "front-end-ts:build"
+
+            "browserTarget": "legiz:build"
+
           }
         },
         "test": {
@@ -107,5 +109,7 @@
       }
     }
   },
-  "defaultProject": "front-end-ts"
+
+  "defaultProject": "legiz"
+
 }
