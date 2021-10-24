@@ -1,20 +1,10 @@
 {
   "cases": [
     {
-      "id": 1,
-      "name": "Complaint for food",
-      "type": "Legal consultation",
-      "description": "The father of my child does not pay me the pension for more than 8 months"
-    },
-    {
       "id": 2,
       "name": "Physical abuse",
       "type": "Custom case",
       "description": "When we lived together the father of my son used to beat me"
-    },
-    {
-      "name": "hola",
-      "id": 3
     }
   ],
   "layers": [
@@ -26,7 +16,8 @@
       "birthday": "September 15, 1988",
       "phone": 987542141,
       "tuition": 1472583691,
-      "specialty": "Criminal Law"
+      "specialty": "Criminal Law",
+      "district": "Callao"
     },
     {
       "id": 102,
@@ -36,7 +27,8 @@
       "birthday": "August 10, 1978",
       "phone": 996852147,
       "tuition": 8547521485,
-      "specialty": "International right"
+      "specialty": "International right",
+      "district": "Callao"
     },
     {
       "id": 103,
@@ -46,7 +38,8 @@
       "birthday": "September 30, 1996",
       "phone": 932678941,
       "tuition": 1425869742,
-      "specialty": "Civil Law"
+      "specialty": "Civil Law",
+      "district": "Magdalena"
     }
   ]
 }
