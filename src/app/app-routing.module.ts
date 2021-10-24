@@ -1,20 +1,17 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CasesComponent } from "./cases/pages/cases/cases.component";
-import { HomeComponent } from "./public/home/home.component";
-import { AboutComponent } from "./public/about/about.component";
-import { SpecializationsComponent  } from "./public/specializations/specializations.component";
-import { LoginComponent } from "./public/login/login.component";
-import { SignupComponent } from "./public/signup/signup.component";
+import { MainComponent } from "./domain/main/main.component";
+import { SignUpBaseComponent } from "./public/sign-up/sign-up-base/sign-up-base.component";
+import { FormClientComponent } from "./public/sign-up/sign-up-client/form-client/form-client.component";
+import { FormLawyerComponent } from "./public/sign-up/sign-up-lawyer/form-lawyer/form-lawyer.component";
+import { CardFormLawyerComponent } from "./domain/search-lawyer/card-form-lawyer/card-form-lawyer.component";
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
-  { path: 'about', component: AboutComponent},
-  { path: '', redirectTo: 'home', pathMatch: 'full'},
-  { path: 'specializations', component: SpecializationsComponent},
-  { path: 'login', component: LoginComponent},
-  { path: 'signup', component: SignupComponent},
-  { path: 'cases', component: CasesComponent}
+  { path: 'sign-up', component: SignUpBaseComponent },
+  { path: 'sign-up/client', component: FormClientComponent },
+  { path: 'sign-up/lawyer', component: FormLawyerComponent },
+  { path: 'main', component: MainComponent },
+  { path: 'search-lawyer', component: CardFormLawyerComponent }
 ];
 
 @NgModule({

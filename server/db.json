@@ -1,45 +1,18 @@
 {
-  "cases": [
+  "lawyer": [
     {
-      "id": 2,
-      "name": "Physical abuse",
-      "type": "Custom case",
-      "description": "When we lived together the father of my son used to beat me"
-    }
-  ],
-  "layers": [
-    {
-      "id": 101,
-      "name": "Julio Marcos",
-      "surname": "Pedreros Castillan",
-      "email": "julio12@hotmail.com",
-      "birthday": "September 15, 1988",
-      "phone": 987542141,
-      "tuition": 1472583691,
-      "specialty": "Criminal Law",
-      "district": "Callao"
+      "district": "Callao",
+      "email": "m@hotmail.com",
+      "id": 4,
+      "name": "Mauricio",
+      "specialty": "Human Rights"
     },
     {
-      "id": 102,
-      "name": "Miriam Ross",
-      "surname": "Machaguay Cuadros",
-      "email": "mrmc1978@hotmail.com",
-      "birthday": "August 10, 1978",
-      "phone": 996852147,
-      "tuition": 8547521485,
-      "specialty": "International right",
-      "district": "Callao"
-    },
-    {
-      "id": 103,
-      "name": "Victor Valentino",
-      "surname": "Diaz Machaguay",
-      "email": "valendm45@hotmail.com",
-      "birthday": "September 30, 1996",
-      "phone": 932678941,
-      "tuition": 1425869742,
+      "id":5,
+      "name": "Gustavo",
+      "email": "g@hotmail.com",
       "specialty": "Civil Law",
-      "district": "Magdalena"
+      "district": "San Miguel"
     }
   ]
 }
