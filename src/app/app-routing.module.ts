@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { MainComponent } from "./domain/main/main.component";
-import { SignUpBaseComponent } from "./public/sign-up/sign-up-base/sign-up-base.component";
-import { FormClientComponent } from "./public/sign-up/sign-up-client/form-client/form-client.component";
-import { FormLawyerComponent } from "./public/sign-up/sign-up-lawyer/form-lawyer/form-lawyer.component";
-import { CardFormLawyerComponent } from "./domain/search-lawyer/card-form-lawyer/card-form-lawyer.component";
+import {LegalAdviceComponent} from "./lawyer/legal-advice/legal-advice.component";
+import {ConsultsComponent} from "./client/consults/consults.component";
+import {QualificationsComponent} from "./lawyer/qualifications/qualifications.component";
+import { MeetingComponent } from "./lawyer/meeting/meeting.component";
 
 const routes: Routes = [
-  { path: 'sign-up', component: SignUpBaseComponent },
-  { path: 'sign-up/client', component: FormClientComponent },
-  { path: 'sign-up/lawyer', component: FormLawyerComponent },
-  { path: 'main', component: MainComponent },
-  { path: 'search-lawyer', component: CardFormLawyerComponent }
+  { path: 'legal-advice', component: LegalAdviceComponent },
+  { path: 'consults', component: ConsultsComponent},
+  { path: 'qualifications', component: QualificationsComponent},
+  { path: 'meetings', component: MeetingComponent}
 ];
 
 @NgModule({
