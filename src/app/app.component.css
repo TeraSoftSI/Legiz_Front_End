@@ -1,14 +1,3 @@
-.tb-color {
-  background-color: darkblue;
-}
-
 .mat-spacer {
   flex: 1 1 auto;
-}
-
-.btn {
-  color: white;
-  margin: 2px;
-  font-family: "Cambria Math";
-  font-size: large;
 }
