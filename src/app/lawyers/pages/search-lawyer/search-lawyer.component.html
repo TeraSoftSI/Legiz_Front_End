@@ -1,0 +1,48 @@
+<mat-toolbar color="primary">
+  <a mat-button [routerLink]="'/clients-home'" class="title-bar">LEGIZ</a>
+  <div class="mat-spacer"></div>
+  <a mat-button [routerLink]="'client-profile'">My Profile</a>
+  <a mat-button [routerLink]="'edit-client-profile'">Edit Profile</a>
+  <a mat-button [routerLink]="'/advices'">Legal Advices</a>
+  <a mat-button [routerLink]="'/login'" color="warn">Logout</a>
+</mat-toolbar>
+<div>
+  <div align="center" class="search-title">
+    <h1>Search Lawyer</h1>
+  </div>
+  <form [formGroup]="formGroup" (ngSubmit)="submitForm()" class="search-form">
+    <mat-form-field appearance="outline" class="full-search-bar">
+      <mat-label>Specialty</mat-label>
+      <mat-select formControlName="specialty">
+        <mat-option value="Human Rights">Human Rights</mat-option>
+        <mat-option value="Civil Law">Civil Law</mat-option>
+        <mat-option value="Criminal Law">Criminal Law</mat-option>
+        <mat-option value="Commercial Law">Commercial Law</mat-option>
+        <mat-option value="International Right">International Right</mat-option>
+        <mat-option value="Digital Law">Digital Law</mat-option>
+      </mat-select>
+      <mat-error *ngIf="formGroup.get('specialty')?.hasError('required')">Specialization is <strong>required</strong></mat-error>
+    </mat-form-field>
+    <br>
+    <button mat-flat-button color="primary" type="submit">Search</button>
+  </form>
+</div>
+
+<mat-divider></mat-divider>
+
+<div class="lawyers-content">
+  <mat-card *ngFor="let lawyer of lawyers" class="lawyers-card">
+    <mat-card-header>
+      <mat-card-title>{{ lawyer.name }} {{lawyer.lastName}}</mat-card-title>
+      <mat-card-subtitle>{{ lawyer.specialty }}</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image [src]="'https://media.istockphoto.com/photos/lawyer-who-provides-legal-advice-in-the-office-businessman-and-lawyer-picture-id1272631304?b=1&k=20&m=1272631304&s=170667a&w=0&h=j4BHQXpqcS2DQWAoBUqdpXOa0g2Igo8VNCTffI0HgLY='">
+    <mat-card-content>
+      <p>Some description</p>
+    </mat-card-content>
+    <mat-card-actions class="action-buttons">
+      <a mat-button color="primary" [href]="" target="_blank"><mat-icon>visibility</mat-icon> View Profile</a>
+      <a mat-button color="primary" [href]="" target="_blank"><mat-icon>event</mat-icon> Hire Law </a>
+    </mat-card-actions>
+  </mat-card>
+</div>

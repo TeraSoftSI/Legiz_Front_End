@@ -1,0 +1,26 @@
+<mat-toolbar color="primary">
+  <a mat-button [routerLink]="'/clients-home'" class="title-bar">LEGIZ</a>
+  <div class="mat-spacer"></div>
+  <a mat-button [routerLink]="'client-profile'">My Profile</a>
+  <a mat-button [routerLink]="'edit-client-profile'">Edit Profile</a>
+  <a mat-button [routerLink]="'/advices'">Legal Advices</a>
+  <a mat-button [routerLink]="'/login'" color="warn">Logout</a>
+</mat-toolbar>
+
+<div class="clients-background">
+  <p> .</p>
+  <mat-card class="home-options-card">
+    <mat-card-header class="home-title">
+      <mat-card-title>Welcome Client</mat-card-title>
+      <mat-card-subtitle>Look at all you can do!</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <img mat-card-image src="https://www.dropbox.com/s/4cq7jpmrxzc3jc9/Logo_Legiz.png?dl=1" class="logo-profile" alt="">
+      <div class="home-button-content">
+        <button mat-raised-button class="home-option-button">View my Profile</button>
+        <button mat-raised-button [routerLink]="'/search-lawyer'" class="home-option-button">Search Lawyers</button>
+        <button mat-raised-button class="home-option-button">Check my cases</button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</div>

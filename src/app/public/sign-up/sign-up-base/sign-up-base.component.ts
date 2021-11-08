@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import {root} from "rxjs/internal-compatibility";
-import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-sign-up-base',
@@ -11,7 +9,7 @@ export class SignUpBaseComponent implements OnInit {
 
   visible: boolean = true;
 
-  constructor(private root: Router) {
+  constructor() {
   }
 
   ngOnInit(): void {
@@ -22,4 +20,3 @@ export class SignUpBaseComponent implements OnInit {
   }
 
 }
-

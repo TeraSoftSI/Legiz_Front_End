@@ -1,3 +1,15 @@
+.mat-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background-color: midnightblue;
+}
+
+.title-bar{
+  font-size: x-large;
+}
+/**/
 h1 {
   font-family: "Baskerville Old Face";
   font-size: xx-large;
@@ -14,7 +26,7 @@ a {
 }
 .span-text {
   margin: 150px;
-  font-family: "Bookman Old Style";
+  font-family: "Bookman Old Style", Roboto;
   font-size: 16px;
 }
 .image {

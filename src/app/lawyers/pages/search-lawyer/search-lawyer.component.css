@@ -1,0 +1,42 @@
+.mat-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background-color: midnightblue;
+}
+
+.title-bar{
+  font-size: x-large;
+}
+
+h1{
+  font-family: Roboto;
+  font-size: 50px;
+}
+
+.full-search-bar{
+  width: 100%;
+}
+
+.lawyers-content{
+  width: 100%;
+  display: flex;
+  flex: content-box;
+  flex-wrap: wrap;
+}
+
+.lawyers-card{
+  margin: 20px 20px 20px 20px;
+  max-width: 300px;
+}
+
+.search-title{
+  margin-top: 20px;
+}
+
+.search-form{
+  max-width: 50%;
+  margin-left: 16%;
+  margin-bottom: 10px;
+}
