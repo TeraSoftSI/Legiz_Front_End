@@ -1,97 +1,75 @@
 {
-  "lawyers": [
-    {
-      "id": 1,
-      "name": "John Doe",
-      "age": 30
-    },
-    {
-      "id": 2,
-      "name": "Mauricio Carmen",
-      "age": 21
-    }
-  ],
   "clients": [
     {
       "id": 1,
-      "name": "Diego Torres",
-      "age": 22
+      "name": "John",
+      "lastName": "Doe",
+      "email": "john.doe@gmail.com",
+      "age": "32",
+      "address": "house",
+      "password": "12345678"
     },
     {
       "id": 2,
-      "name": "Joel Litano",
-      "age": 21
+      "name": "Anne",
+      "lastName": "Doe",
+      "email": "anne.doe@gmail.com",
+      "age": "30",
+      "address": "house",
+      "password": "12345678"
+    }
+  ],
+  "lawyers": [
+    {
+      "id": 1,
+      "name": "Mauricio",
+      "lastName": "Torres",
+      "email": "mauricio.torres@gmail.com",
+      "age": 38,
+      "address": "San Miguel",
+      "specialization": "Commercial Law",
+      "collegeNumber": 696969
+    },
+    {
+      "id": 2,
+      "name": "Oscar",
+      "lastName": "Espinoza",
+      "email": "oscar.espinoza@gmail.com",
+      "age": 43,
+      "address": "Chorrillos",
+      "specialization": "Civil Law",
+      "collegeNumber": 696969
+    },
+    {
+      "id": 3,
+      "name": "Angel",
+      "lastName": "Augusto",
+      "email": "angel.augusto@gmail.com",
+      "age": 40,
+      "address": "Surco",
+      "specialization": "Civil Law",
+      "collegeNumber": 696969
     }
   ],
   "consults": [
     {
       "id": 1,
-      "clientId": 1,
-      "title": "I need an advice",
-      "description": "Lorem ipsum text description"
+      "clientId": "1",
+      "title": "I need help",
+      "description": "Description"
     },
     {
       "id": 2,
-      "clientId": 1,
-      "title": "I need an advice, please",
-      "description": "Lorem ipsum text description"
+      "clientId": "1",
+      "title": "I need help again",
+      "description": "Description"
     },
     {
       "id": 3,
-      "clientId": 2,
-      "title": "I don't need an advice",
-      "description": "Lorem ipsum text description"
+      "clientId": "2",
+      "title": "I need help again",
+      "description": "Description"
     }
   ],
-  "advices": [
-    {
-      "id": 1,
-      "consultId": 1,
-      "lawyerId": 1,
-      "comment": "I can help you!"
-    },
-    {
-      "id": 2,
-      "consultId": 1,
-      "lawyerId": 2,
-      "comment": "I can help you!"
-    },
-    {
-      "id": 3,
-      "consultId": 2,
-      "lawyerId": 1,
-      "comment": "I can help you!"
-    },
-    {
-      "id": 4,
-      "consultId": 2,
-      "lawyerId": 2,
-      "comment": "I can help you!"
-    },
-    {
-      "id": 5,
-      "consultId": 3,
-      "lawyerId": 1,
-      "comment": "I can help you!"
-    }
-  ],
-  "qualifications": [
-    {
-      "id": 1,
-      "lawyerId": 1,
-      "clientId": 1,
-      "stars": 4,
-      "comment": "A great lawyer"
-    }
-  ],
-  "meeting": [
-    {
-      "id": 1,
-      "clientId": 1,
-      "date": "23/10/2021",
-      "type": "Virtual",
-      "state": "confirm"
-    }
-  ]
+  "advices": []
 }
-

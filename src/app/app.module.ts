@@ -3,46 +3,75 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { LegalAdviceComponent } from './lawyer/legal-advice/legal-advice.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatCardModule } from "@angular/material/card";
-import { MatButtonModule } from "@angular/material/button";
-import { MatToolbarModule } from "@angular/material/toolbar";
-import { MatInputModule } from "@angular/material/input";
-import { MatSidenavModule } from "@angular/material/sidenav";
-import { MatMenuModule } from "@angular/material/menu";
-import { MatIconModule } from "@angular/material/icon";
-import { MatListModule } from "@angular/material/list";
-import { MeetingComponent } from './lawyer/meeting/meeting.component';
-import { ConsultsComponent } from './client/consults/consults.component';
-import { QualificationsComponent } from './lawyer/qualifications/qualifications.component';
-import {FormsModule} from "@angular/forms";
+import { HomeComponent } from './public/home/home.component';
+import { ClientsHomeComponent } from './clients/pages/clients-home/clients-home.component';
+import {MatCardModule} from "@angular/material/card";
+import {MatToolbarModule} from "@angular/material/toolbar";
+import {MatButtonModule} from "@angular/material/button";
+import {MatDividerModule} from "@angular/material/divider";
+import { AdvicesComponent } from './legal-advices/pages/advices/advices.component';
+import { SearchLawyerComponent } from './lawyers/pages/search-lawyer/search-lawyer.component';
+import {MatIconModule} from "@angular/material/icon";
+import {MatSelectModule} from "@angular/material/select";
+import {MatStepperModule} from "@angular/material/stepper";
+import {MatGridListModule} from "@angular/material/grid-list";
+import {MatDatepickerModule} from "@angular/material/datepicker";
+import {MatNativeDateModule} from "@angular/material/core";
+import {HttpClientModule} from "@angular/common/http";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatTableModule} from "@angular/material/table";
 import {MatPaginatorModule} from "@angular/material/paginator";
+import {MatInputModule} from "@angular/material/input";
+import { SpecializationsComponent } from './public/specializations/specializations.component';
+import { AboutUsComponent } from './public/about-us/about-us.component';
+import { LoginComponent } from './public/login/login.component';
+import { LawyersHomeComponent } from './lawyers/pages/lawyers-home/lawyers-home.component';
+import { SignUpBaseComponent } from './public/sign-up/sign-up-base/sign-up-base.component';
+import { SignUpClientsComponent } from './public/sign-up/sign-up-clients/sign-up-clients.component';
+import { SignUpLawyersComponent } from './public/sign-up/sign-up-lawyers/sign-up-lawyers.component';
+import { DialogClientsComponent } from './public/sign-up/dialog-clients/dialog-clients.component';
+import {MatDialogModule} from "@angular/material/dialog";
+import { PageNotFoundComponent } from './public/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LegalAdviceComponent,
-    MeetingComponent,
-    ConsultsComponent,
-    QualificationsComponent
+    HomeComponent,
+    ClientsHomeComponent,
+    AdvicesComponent,
+    SearchLawyerComponent,
+    SpecializationsComponent,
+    AboutUsComponent,
+    LoginComponent,
+    LawyersHomeComponent,
+    SignUpBaseComponent,
+    SignUpClientsComponent,
+    SignUpLawyersComponent,
+    DialogClientsComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatCardModule,
-    MatButtonModule,
-    MatToolbarModule,
-    MatInputModule,
-    MatSidenavModule,
-    MatListModule,
-    MatIconModule,
-    MatMenuModule,
+    HttpClientModule,
     FormsModule,
+    ReactiveFormsModule,
     MatTableModule,
     MatPaginatorModule,
+    MatInputModule,
+    MatCardModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatDividerModule,
+    MatIconModule,
+    MatSelectModule,
+    MatStepperModule,
+    MatGridListModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]

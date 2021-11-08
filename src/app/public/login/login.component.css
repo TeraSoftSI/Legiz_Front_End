@@ -1,0 +1,23 @@
+.mat-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background-color: midnightblue;
+}
+
+.title-bar{
+  font-size: x-large;
+}
+/**/
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}

@@ -1,0 +1,49 @@
+<mat-toolbar color="primary">
+  <a mat-button [routerLink]="'specializations'" class="title-bar">LEGIZ</a>
+  <div class="mat-spacer"></div>
+  <a mat-button [routerLink]="'/sign-up'" color="accent">Sign Up</a>
+  <a mat-button [routerLink]="'/login'" color="accent">Login</a>
+  <a mat-button [routerLink]="'/about-us'">About Us</a>
+  <a mat-button [routerLink]="'/specializations'">Specializations</a>
+</mat-toolbar>
+<mat-card class="center" style="width: 70%">
+  <ng-container>
+    <mat-card style="text-align: center">
+      <h1>Log In</h1>
+    </mat-card>
+    <p></p>
+    <img src="https://www.dropbox.com/s/4cq7jpmrxzc3jc9/Logo_Legiz.png?dl=1" class="center" style="width: 20%" alt="">
+    <p></p>
+    <ng-container>
+      <mat-card class="center" style="text-align: center">
+        <mat-form-field appearance="fill">
+          <mat-label>Type</mat-label>
+          <mat-select [formControl]="userControl">
+            <mat-option value="client">Client</mat-option>
+            <mat-option value="lawyer">Lawyer</mat-option>
+          </mat-select>
+        </mat-form-field>
+        <p></p>
+        <mat-form-field appearance="fill">
+          <mat-label>Username</mat-label>
+          <input matInput>
+        </mat-form-field>
+        <p></p>
+        <mat-form-field appearance="fill">
+          <mat-label>Enter your password</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'">
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+        <p></p>
+        <ng-container *ngIf="userControl.value == 'client'; else lawyerLogin">
+          <button mat-raised-button [routerLink]="'/clients-home'" color="primary">Login</button>
+        </ng-container>
+        <ng-template #lawyerLogin>
+          <button mat-raised-button [routerLink]="'/lawyers-home'" color="primary">Login</button>
+        </ng-template>
+      </mat-card>
+    </ng-container>
+  </ng-container>
+</mat-card>

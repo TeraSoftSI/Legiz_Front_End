@@ -1,10 +1,19 @@
+<mat-toolbar color="primary">
+  <a mat-button [routerLink]="'specializations'" class="title-bar">LEGIZ</a>
+  <div class="mat-spacer"></div>
+  <a mat-button [routerLink]="'/sign-up'" color="accent">Sign Up</a>
+  <a mat-button [routerLink]="'/login'" color="accent">Login</a>
+  <a mat-button [routerLink]="'/about-us'">About Us</a>
+  <a mat-button [routerLink]="'/specializations'">Specializations</a>
+</mat-toolbar>
+
 <div align="center">
   <div>
     <h1>Select your Profile</h1>
   </div>
-  <div >
-    <span class="span-image"><a mat-flat-button [routerLink]="'/sign-up/client'"><img src="assets/images/persona.png" class="image" alt="Persona"/></a></span>
-    <span class="span-image"><a mat-flat-button [routerLink]="'/sign-up/lawyer'"><img src="assets/images/abogado.png" class="image" alt="Abogado"/></a></span>
+  <div>
+    <span class="span-image"><a mat-flat-button [routerLink]="'/sign-up/clients'"><img src="assets/images/persona.png" class="image" alt="Persona"/></a></span>
+    <span class="span-image"><a mat-flat-button [routerLink]="'/sign-up/lawyers'"><img src="assets/images/abogado.png" class="image" alt="Abogado"/></a></span>
   </div>
   <div>
     <span class="span-text">Client</span>

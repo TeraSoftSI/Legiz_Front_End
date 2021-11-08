@@ -1,0 +1,38 @@
+.mat-spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar {
+  background-color: midnightblue;
+}
+
+.title-bar{
+  font-size: x-large;
+}
+/**/
+body {
+  background-image: url('https://blog.ipleaders.in/wp-content/uploads/2019/11/african-lawyer-.jpg');
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.container{
+  width: 100%;
+  display: flex;
+  flex: content-box;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container mat-card{
+  margin: 10px 10px 10px 10px;
+  max-width: 400px;
+}
+
+.card-text{
+  margin: 30px 10px 10px 10px;
+}

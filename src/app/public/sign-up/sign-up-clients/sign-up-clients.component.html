@@ -1,0 +1,40 @@
+<mat-toolbar color="primary">
+  <a mat-button [routerLink]="'specializations'" class="title-bar">LEGIZ</a>
+  <div class="mat-spacer"></div>
+  <a mat-button [routerLink]="'/sign-up'" color="accent">Sign Up</a>
+  <a mat-button [routerLink]="'/login'" color="accent">Login</a>
+  <a mat-button [routerLink]="'/about-us'">About Us</a>
+  <a mat-button [routerLink]="'/specializations'">Specializations</a>
+</mat-toolbar>
+<div align="center">
+  <h1>Sign Up Client</h1>
+  <form [formGroup]="registerForm" (submit)="submitForm()">
+    <mat-form-field appearance="outline">
+      <mat-label>Name</mat-label>
+      <input matInput type="text" formControlName="name"/>
+      <mat-error *ngIf="registerForm.get('name')?.hasError('required')">Name is <strong>required</strong></mat-error>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline">
+      <mat-label>Last Name</mat-label>
+      <input matInput type="text" formControlName="lastName"/>
+      <mat-error *ngIf="registerForm.get('lastName')?.hasError('required')">Last Name is <strong>required</strong></mat-error>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline">
+      <mat-label>Email</mat-label>
+      <input matInput type="email" formControlName="email"/>
+      <mat-error *ngIf="registerForm.get('email')?.hasError('required')">Email is <strong>required</strong></mat-error>
+      <mat-error *ngIf="registerForm.get('email')?.hasError('email')">Write a <strong>correct</strong> mail</mat-error>
+    </mat-form-field>
+    <br/>
+    <mat-form-field appearance="outline">
+      <mat-label>Password</mat-label>
+      <input matInput type="password" formControlName="password"/>
+      <mat-error *ngIf="registerForm.get('password')?.hasError('required')">Password is <strong>required</strong></mat-error>
+      <mat-error *ngIf="registerForm.get('password')?.hasError('minlength')">Min Length is <strong>8</strong> words</mat-error>
+    </mat-form-field>
+    <br/>
+    <button mat-flat-button color="primary" type="submit">Create</button>
+  </form>
+</div>
