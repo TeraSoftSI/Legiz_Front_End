@@ -1,0 +1,97 @@
+{
+  "lawyers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "age": 30
+    },
+    {
+      "id": 2,
+      "name": "Mauricio Carmen",
+      "age": 21
+    }
+  ],
+  "clients": [
+    {
+      "id": 1,
+      "name": "Diego Torres",
+      "age": 22
+    },
+    {
+      "id": 2,
+      "name": "Joel Litano",
+      "age": 21
+    }
+  ],
+  "consults": [
+    {
+      "id": 1,
+      "clientId": 1,
+      "title": "I need an advice",
+      "description": "Lorem ipsum text description"
+    },
+    {
+      "id": 2,
+      "clientId": 1,
+      "title": "I need an advice, please",
+      "description": "Lorem ipsum text description"
+    },
+    {
+      "id": 3,
+      "clientId": 2,
+      "title": "I don't need an advice",
+      "description": "Lorem ipsum text description"
+    }
+  ],
+  "advices": [
+    {
+      "id": 1,
+      "consultId": 1,
+      "lawyerId": 1,
+      "comment": "I can help you!"
+    },
+    {
+      "id": 2,
+      "consultId": 1,
+      "lawyerId": 2,
+      "comment": "I can help you!"
+    },
+    {
+      "id": 3,
+      "consultId": 2,
+      "lawyerId": 1,
+      "comment": "I can help you!"
+    },
+    {
+      "id": 4,
+      "consultId": 2,
+      "lawyerId": 2,
+      "comment": "I can help you!"
+    },
+    {
+      "id": 5,
+      "consultId": 3,
+      "lawyerId": 1,
+      "comment": "I can help you!"
+    }
+  ],
+  "qualifications": [
+    {
+      "id": 1,
+      "lawyerId": 1,
+      "clientId": 1,
+      "stars": 4,
+      "comment": "A great lawyer"
+    }
+  ],
+  "meeting": [
+    {
+      "id": 1,
+      "clientId": 1,
+      "date": "23/10/2021",
+      "type": "Virtual",
+      "state": "confirm"
+    }
+  ]
+}
+
